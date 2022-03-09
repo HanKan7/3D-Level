@@ -1,123 +1,126 @@
 Using pre-set license
 Built from '2020.3/staging' branch; Version is '2020.3.22f1 (e1a7f79fd887) revision 14788599'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Home; OS build 22000.493; Version 2009; 64bit' Language: 'en' Physical Memory: 15792 MB
+OS: 'Windows 10 Home; OS build 22000.556; Version 2009; 64bit' Language: 'en' Physical Memory: 16126 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
 COMMAND LINE ARGUMENTS:
-C:\Hanu\Editor\Unity.exe
+C:\Program Files\Unity\Hub\Editor\2020.3.22f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-H:/UCSC Projects/Level Design/3D Level/3D-Level/3D Level
+J:/GAME 201/3D Level Git/3D-Level/3D Level
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-58610
-Successfully changed project path to: H:/UCSC Projects/Level Design/3D Level/3D-Level/3D Level
-H:/UCSC Projects/Level Design/3D Level/3D-Level/3D Level
+51963
+Successfully changed project path to: J:/GAME 201/3D Level Git/3D-Level/3D Level
+J:/GAME 201/3D Level Git/3D-Level/3D Level
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 31.38 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 51.11 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.22f1 (e1a7f79fd887)
-[Subsystems] Discovering subsystems at path C:/Hanu/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path H:/UCSC Projects/Level Design/3D Level/3D-Level/3D Level/Assets
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path J:/GAME 201/3D Level Git/3D-Level/3D Level/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce RTX 3080 Laptop GPU (ID=0x249c)
+    Renderer: NVIDIA GeForce RTX 3060 Laptop GPU (ID=0x2560)
     Vendor:   
-    VRAM:     8042 MB
-    Driver:   30.0.14.9649
+    VRAM:     6023 MB
+    Driver:   30.0.15.1179
 Initialize mono
-Mono path[0] = 'C:/Hanu/Editor/Data/Managed'
-Mono path[1] = 'C:/Hanu/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = 'C:/Hanu/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56908
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56452
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Hanu/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001137 seconds.
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001087 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 36.92 ms, found 2 plugins.
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 40.04 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.394 seconds
+- Completed reload, in  0.926 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1395ms)
-		BeginReloadAssembly (38ms)
+	ReloadAssembly (926ms)
+		BeginReloadAssembly (36ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (448ms)
-			LoadAssemblies (36ms)
+		EndReloadAssembly (385ms)
+			LoadAssemblies (35ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (182ms)
+			SetupTypeCache (123ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (21ms)
-			SetupLoadedEditorAssemblies (147ms)
+			RebuildScriptCaches (29ms)
+			SetupLoadedEditorAssemblies (144ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (3ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (37ms)
-				BeforeProcessingInitializeOnLoad (13ms)
-				ProcessInitializeOnLoadAttributes (65ms)
-				ProcessInitializeOnLoadMethodAttributes (28ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (40ms)
+				BeforeProcessingInitializeOnLoad (14ms)
+				ProcessInitializeOnLoadAttributes (63ms)
+				ProcessInitializeOnLoadMethodAttributes (23ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.089726 seconds.
+Registered in 0.002713 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 37.24 ms, found 2 plugins.
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 40.93 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.050 seconds
+- Completed reload, in  1.010 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1056ms)
-		BeginReloadAssembly (105ms)
+	ReloadAssembly (1011ms)
+		BeginReloadAssembly (147ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (17ms)
-		EndReloadAssembly (904ms)
-			LoadAssemblies (67ms)
+			CreateAndSetChildDomain (27ms)
+		EndReloadAssembly (812ms)
+			LoadAssemblies (77ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (224ms)
+			SetupTypeCache (242ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (37ms)
-			SetupLoadedEditorAssemblies (481ms)
+			RebuildScriptCaches (45ms)
+			SetupLoadedEditorAssemblies (344ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (37ms)
-				BeforeProcessingInitializeOnLoad (63ms)
-				ProcessInitializeOnLoadAttributes (361ms)
+				RefreshPlugins (41ms)
+				BeforeProcessingInitializeOnLoad (61ms)
+				ProcessInitializeOnLoadAttributes (224ms)
 				ProcessInitializeOnLoadMethodAttributes (11ms)
-				AfterProcessingInitializeOnLoad (4ms)
+				AfterProcessingInitializeOnLoad (3ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
-Refreshing native plugins compatible for Editor in 0.51 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.57 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1950 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 86.9 MB.
 System memory in use after: 87.0 MB.
 
 Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 2388.
-Total: 2.882100 ms (FindLiveObjects: 0.222000 ms CreateObjectMapping: 0.057900 ms MarkObjects: 2.531500 ms  DeleteObjects: 0.069800 ms)
+Total: 3.085300 ms (FindLiveObjects: 0.228900 ms CreateObjectMapping: 0.079400 ms MarkObjects: 2.706000 ms  DeleteObjects: 0.069100 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -132,336 +135,233 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/PolygonFantasyCharacters/Prefabs/Character_Male_King_01.prefab
-  artifactKey: Guid(5ad43ee3802caa04ab0928a13c462a56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PolygonFantasyCharacters/Prefabs/Character_Male_King_01.prefab using Guid(5ad43ee3802caa04ab0928a13c462a56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8722af85619f0b0e175832c765387d58') in 0.121304 seconds 
-  Import took 0.124790 seconds .
+  path: Assets/Polylised - Medieval Desert City/Prefabs/prefab_trees/dead_tree_h.prefab
+  artifactKey: Guid(c22e62201f2b11245b2b8f3188b66655) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Polylised - Medieval Desert City/Prefabs/prefab_trees/dead_tree_h.prefab using Guid(c22e62201f2b11245b2b8f3188b66655) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd259da7cfc27137ea1cc8874e32cfdf0') in 0.132414 seconds 
+  Import took 0.136175 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000154 seconds.
-  path: Assets/PolygonFantasyCharacters/Prefabs/Character_Female_Peasant_02.prefab
-  artifactKey: Guid(29e0acc4764696c4198aa7ffda2fdf48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PolygonFantasyCharacters/Prefabs/Character_Female_Peasant_02.prefab using Guid(29e0acc4764696c4198aa7ffda2fdf48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7569f83e026dba4ac367e3b04b0a6f26') in 0.025054 seconds 
-  Import took 0.028600 seconds .
+  Time since last request: 0.000405 seconds.
+  path: Assets/Polylised - Medieval Desert City/Prefabs/prefab_trees/dead_tree_i.prefab
+  artifactKey: Guid(c4789a704ccd23f4d9aa4a8694b41fa0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Polylised - Medieval Desert City/Prefabs/prefab_trees/dead_tree_i.prefab using Guid(c4789a704ccd23f4d9aa4a8694b41fa0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad045fed5400d482d84fb0cde1188a42') in 0.021042 seconds 
+  Import took 0.025969 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000151 seconds.
-  path: Assets/PolygonFantasyCharacters/Prefabs/Character_Male_Peasant_01.prefab
-  artifactKey: Guid(66ec70d7de4f4c644a7ace1f5f0a2a9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PolygonFantasyCharacters/Prefabs/Character_Male_Peasant_01.prefab using Guid(66ec70d7de4f4c644a7ace1f5f0a2a9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16f2f1a3aad5dab69696de4ebab1ade5') in 0.016111 seconds 
-  Import took 0.019781 seconds .
+  Time since last request: 0.000620 seconds.
+  path: Assets/Polylised - Medieval Desert City/Prefabs/prefab_trees/dead_tree_j.prefab
+  artifactKey: Guid(29e966885f102e54d97ab5f78ed715c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Polylised - Medieval Desert City/Prefabs/prefab_trees/dead_tree_j.prefab using Guid(29e966885f102e54d97ab5f78ed715c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f45b2ff7f7d75d4c8e00309ab7b6b17') in 0.023326 seconds 
+  Import took 0.028141 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000134 seconds.
-  path: Assets/PolygonFantasyCharacters/Prefabs/SM_Prop_Dagger_01.prefab
-  artifactKey: Guid(a72fcdd51f52f5146b54b8faccf63756) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PolygonFantasyCharacters/Prefabs/SM_Prop_Dagger_01.prefab using Guid(a72fcdd51f52f5146b54b8faccf63756) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa329874d13c97085418e49919114c65') in 0.010739 seconds 
-  Import took 0.013711 seconds .
+  Time since last request: 0.000627 seconds.
+  path: Assets/Polylised - Medieval Desert City/Prefabs/prefab_trees/dead_tree_e.prefab
+  artifactKey: Guid(9e9d25172ea57e54cad899a510194ea8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Polylised - Medieval Desert City/Prefabs/prefab_trees/dead_tree_e.prefab using Guid(9e9d25172ea57e54cad899a510194ea8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02e772a7f34a5d4a6618595ebb34a712') in 0.019468 seconds 
+  Import took 0.023676 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000137 seconds.
-  path: Assets/PolygonFantasyCharacters/Prefabs/SM_Prop_Jug_01.prefab
-  artifactKey: Guid(0ceb7a0fab62ffe4c8c9220209ae013c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PolygonFantasyCharacters/Prefabs/SM_Prop_Jug_01.prefab using Guid(0ceb7a0fab62ffe4c8c9220209ae013c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b744a11e381ddb05a755df8b80e45e5') in 0.010780 seconds 
-  Import took 0.013467 seconds .
+  Time since last request: 0.000303 seconds.
+  path: Assets/Polylised - Medieval Desert City/Prefabs/prefab_trees/dead_tree_d.prefab
+  artifactKey: Guid(7ffc5928338e9a1418cd3caa68441619) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Polylised - Medieval Desert City/Prefabs/prefab_trees/dead_tree_d.prefab using Guid(7ffc5928338e9a1418cd3caa68441619) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c904c46d7db22e2dcfb925ff2ee5120') in 0.021630 seconds 
+  Import took 0.025499 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000134 seconds.
-  path: Assets/PolygonFantasyCharacters/Prefabs/Character_Male_Baird_01.prefab
-  artifactKey: Guid(97c46f85ed671244b83b2409f56039d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PolygonFantasyCharacters/Prefabs/Character_Male_Baird_01.prefab using Guid(97c46f85ed671244b83b2409f56039d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8799870bc3df7e872fccb94db20d3dcd') in 0.015487 seconds 
-  Import took 0.018616 seconds .
+  Time since last request: 0.000416 seconds.
+  path: Assets/Polylised - Medieval Desert City/Prefabs/prefab_trees/dead_tree_g.prefab
+  artifactKey: Guid(a923030e277c73c4880630365f3a67b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Polylised - Medieval Desert City/Prefabs/prefab_trees/dead_tree_g.prefab using Guid(a923030e277c73c4880630365f3a67b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e14411278656a4b601b3bac4fb17bcfc') in 0.019863 seconds 
+  Import took 0.023874 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000129 seconds.
-  path: Assets/PolygonFantasyCharacters/Prefabs/SM_Prop_Crystal_Ball_01.prefab
-  artifactKey: Guid(c0ad510f3323b234e9fb6ba5b6f4a6bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PolygonFantasyCharacters/Prefabs/SM_Prop_Crystal_Ball_01.prefab using Guid(c0ad510f3323b234e9fb6ba5b6f4a6bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de9e72a1dfb64788c606dcd26be158f1') in 0.011303 seconds 
-  Import took 0.013960 seconds .
+  Time since last request: 0.000422 seconds.
+  path: Assets/Polylised - Medieval Desert City/Prefabs/prefab_trees/dead_tree_b.prefab
+  artifactKey: Guid(ccdba26d869ffd548856ea7eca38ac97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Polylised - Medieval Desert City/Prefabs/prefab_trees/dead_tree_b.prefab using Guid(ccdba26d869ffd548856ea7eca38ac97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e570e3019c467e14a5767edd5b06ff0') in 0.015255 seconds 
+  Import took 0.019560 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000139 seconds.
-  path: Assets/PolygonFantasyCharacters/Prefabs/Character_Female_Gypsy_01.prefab
-  artifactKey: Guid(0a5c236a7b8473c4db6e870cfe814a12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PolygonFantasyCharacters/Prefabs/Character_Female_Gypsy_01.prefab using Guid(0a5c236a7b8473c4db6e870cfe814a12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62d13b086ff7b4fa06990e4c614e3b62') in 0.016215 seconds 
-  Import took 0.019382 seconds .
+  Time since last request: 0.000424 seconds.
+  path: Assets/Polylised - Medieval Desert City/Prefabs/prefab_trees/dead_tree_c.prefab
+  artifactKey: Guid(ca09ab545ccbe4346af61d072bc2b67f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Polylised - Medieval Desert City/Prefabs/prefab_trees/dead_tree_c.prefab using Guid(ca09ab545ccbe4346af61d072bc2b67f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4ad83e48980c9231284168f1cb016f5') in 0.017683 seconds 
+  Import took 0.021680 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000134 seconds.
-  path: Assets/PolygonFantasyCharacters/Prefabs/Character_Male_Rouge_01.prefab
-  artifactKey: Guid(534b7b0f42c1d304299f3f3762536fb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PolygonFantasyCharacters/Prefabs/Character_Male_Rouge_01.prefab using Guid(534b7b0f42c1d304299f3f3762536fb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5d274e8a4f82070a9ec29c39ae83f26') in 0.016574 seconds 
-  Import took 0.019816 seconds .
+  Time since last request: 0.000396 seconds.
+  path: Assets/Polylised - Medieval Desert City/Prefabs/prefab_trees/dead_tree_a.prefab
+  artifactKey: Guid(4215dcb581b5b634c914cd0cf1ccd81b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Polylised - Medieval Desert City/Prefabs/prefab_trees/dead_tree_a.prefab using Guid(4215dcb581b5b634c914cd0cf1ccd81b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '445d2b52eab85fd628d960abd11dba5e') in 0.027428 seconds 
+  Import took 0.032422 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000132 seconds.
-  path: Assets/PolygonFantasyCharacters/Prefabs/Character_Male_Sorcerer_01.prefab
-  artifactKey: Guid(3f42b29f9f09e0e40b05df7c984384f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PolygonFantasyCharacters/Prefabs/Character_Male_Sorcerer_01.prefab using Guid(3f42b29f9f09e0e40b05df7c984384f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e01016c07c52bf353a0907bc16a88e2') in 0.015797 seconds 
-  Import took 0.019775 seconds .
+  Time since last request: 0.000431 seconds.
+  path: Assets/Polylised - Medieval Desert City/Prefabs/prefab_trees/dead_tree_f.prefab
+  artifactKey: Guid(de205966855be504a95152ab56d0896e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Polylised - Medieval Desert City/Prefabs/prefab_trees/dead_tree_f.prefab using Guid(de205966855be504a95152ab56d0896e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77710998b8d6732f86561f5a53f9e323') in 0.020481 seconds 
+  Import took 0.024493 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000149 seconds.
-  path: Assets/PolygonFantasyCharacters/Prefabs/SM_Prop_Broom_01.prefab
-  artifactKey: Guid(74472bc2f47a23b41aa71c9d0d2c408f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PolygonFantasyCharacters/Prefabs/SM_Prop_Broom_01.prefab using Guid(74472bc2f47a23b41aa71c9d0d2c408f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68bbb75ded5a29b720266dcb74eedc53') in 0.010378 seconds 
-  Import took 0.013509 seconds .
+  Time since last request: 1.606743 seconds.
+  path: Assets/Polylised - Medieval Desert City/Prefabs/prefab_trees/dead_tree_e.prefab
+  artifactKey: Guid(9e9d25172ea57e54cad899a510194ea8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Polylised - Medieval Desert City/Prefabs/prefab_trees/dead_tree_e.prefab using Guid(9e9d25172ea57e54cad899a510194ea8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94fa39b27257e156e9aa512a91d2f048') in 0.014087 seconds 
+  Import took 0.027571 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000138 seconds.
-  path: Assets/PolygonFantasyCharacters/Prefabs/SM_Prop_Druid_Staff_01.prefab
-  artifactKey: Guid(12caa982699ea3b41a15a260d90f16a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PolygonFantasyCharacters/Prefabs/SM_Prop_Druid_Staff_01.prefab using Guid(12caa982699ea3b41a15a260d90f16a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28550056d41d426b8252a65b5265e428') in 0.010915 seconds 
-  Import took 0.013768 seconds .
+  Time since last request: 0.000868 seconds.
+  path: Assets/Polylised - Medieval Desert City/Prefabs/prefab_trees/dead_tree_a.prefab
+  artifactKey: Guid(4215dcb581b5b634c914cd0cf1ccd81b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Polylised - Medieval Desert City/Prefabs/prefab_trees/dead_tree_a.prefab using Guid(4215dcb581b5b634c914cd0cf1ccd81b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d1fd5cf8d420cb3bad9ce10d6fa8f70') in 0.014533 seconds 
+  Import took 0.018796 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000120 seconds.
-  path: Assets/PolygonFantasyCharacters/Prefabs/Character_Female_Queen_01.prefab
-  artifactKey: Guid(e1f36af446286a549b992a70451f884e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PolygonFantasyCharacters/Prefabs/Character_Female_Queen_01.prefab using Guid(e1f36af446286a549b992a70451f884e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e328c5a1434042e261756c23a4f3a2e') in 0.016301 seconds 
-  Import took 0.019476 seconds .
+  Time since last request: 0.000454 seconds.
+  path: Assets/Polylised - Medieval Desert City/Prefabs/prefab_trees/dead_tree_h.prefab
+  artifactKey: Guid(c22e62201f2b11245b2b8f3188b66655) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Polylised - Medieval Desert City/Prefabs/prefab_trees/dead_tree_h.prefab using Guid(c22e62201f2b11245b2b8f3188b66655) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cadb8a46fc136624c3b6480da8a63e88') in 0.009171 seconds 
+  Import took 0.013589 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000128 seconds.
-  path: Assets/PolygonFantasyCharacters/Prefabs/SM_Prop_Bucket_01.prefab
-  artifactKey: Guid(b6c1c2a5e606d5f49a3095eca864188b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PolygonFantasyCharacters/Prefabs/SM_Prop_Bucket_01.prefab using Guid(b6c1c2a5e606d5f49a3095eca864188b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e7ecb69cd1ebb30eb5200b4ce632293') in 0.010845 seconds 
-  Import took 0.013939 seconds .
+  Time since last request: 0.000345 seconds.
+  path: Assets/Polylised - Medieval Desert City/Prefabs/prefab_trees/dead_tree_i.prefab
+  artifactKey: Guid(c4789a704ccd23f4d9aa4a8694b41fa0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Polylised - Medieval Desert City/Prefabs/prefab_trees/dead_tree_i.prefab using Guid(c4789a704ccd23f4d9aa4a8694b41fa0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba5a281a3b85b4010fa922a4c1ff78ff') in 0.008517 seconds 
+  Import took 0.012385 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000125 seconds.
-  path: Assets/PolygonFantasyCharacters/Prefabs/Character_Female_Peasant_01.prefab
-  artifactKey: Guid(be2bbb2411890c147b59423a27c3dc07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PolygonFantasyCharacters/Prefabs/Character_Female_Peasant_01.prefab using Guid(be2bbb2411890c147b59423a27c3dc07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4211c512907f5203c97b94f20149b7e') in 0.015953 seconds 
-  Import took 0.019550 seconds .
+  Time since last request: 0.000268 seconds.
+  path: Assets/Polylised - Medieval Desert City/Prefabs/prefab_trees/dead_tree_j.prefab
+  artifactKey: Guid(29e966885f102e54d97ab5f78ed715c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Polylised - Medieval Desert City/Prefabs/prefab_trees/dead_tree_j.prefab using Guid(29e966885f102e54d97ab5f78ed715c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '302c1503ec265046352ed57617d1c560') in 0.011427 seconds 
+  Import took 0.014504 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000146 seconds.
-  path: Assets/PolygonFantasyCharacters/Prefabs
-  artifactKey: Guid(93c74715787f3e748b35b453d359532a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PolygonFantasyCharacters/Prefabs using Guid(93c74715787f3e748b35b453d359532a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3518b3b663c4d5472dd8970daea19269') in 0.005711 seconds 
-  Import took 0.008428 seconds .
+  Time since last request: 0.000341 seconds.
+  path: Assets/Polylised - Medieval Desert City/Prefabs/prefab_trees/dead_tree_d.prefab
+  artifactKey: Guid(7ffc5928338e9a1418cd3caa68441619) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Polylised - Medieval Desert City/Prefabs/prefab_trees/dead_tree_d.prefab using Guid(7ffc5928338e9a1418cd3caa68441619) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d3cb32b83ba5345093b695b2102b7ab') in 0.010642 seconds 
+  Import took 0.013917 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000121 seconds.
-  path: Assets/PolygonFantasyCharacters/Prefabs/Character_Female_Druid_01.prefab
-  artifactKey: Guid(f7e586317327fe240bef5a82944f49c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PolygonFantasyCharacters/Prefabs/Character_Female_Druid_01.prefab using Guid(f7e586317327fe240bef5a82944f49c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85c8d0507eea39dd0a94395db6edb9d9') in 0.015731 seconds 
-  Import took 0.019042 seconds .
+  Time since last request: 0.000278 seconds.
+  path: Assets/Polylised - Medieval Desert City/Prefabs/prefab_trees/dead_tree_g.prefab
+  artifactKey: Guid(a923030e277c73c4880630365f3a67b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Polylised - Medieval Desert City/Prefabs/prefab_trees/dead_tree_g.prefab using Guid(a923030e277c73c4880630365f3a67b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '136c578df720e04157aa3bcaa97b9e30') in 0.010828 seconds 
+  Import took 0.014601 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000131 seconds.
-  path: Assets/PolygonFantasyCharacters/Prefabs/Character_Female_Witch_01.prefab
-  artifactKey: Guid(d4d17342014c96842ae633419b8f07a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PolygonFantasyCharacters/Prefabs/Character_Female_Witch_01.prefab using Guid(d4d17342014c96842ae633419b8f07a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9eeeca49895383f9294a2596c1607c6c') in 0.015941 seconds 
-  Import took 0.019575 seconds .
+  Time since last request: 0.000651 seconds.
+  path: Assets/Polylised - Medieval Desert City/Prefabs/prefab_trees/dead_tree_b.prefab
+  artifactKey: Guid(ccdba26d869ffd548856ea7eca38ac97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Polylised - Medieval Desert City/Prefabs/prefab_trees/dead_tree_b.prefab using Guid(ccdba26d869ffd548856ea7eca38ac97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34b3e86aac03f47018819b86dcd27776') in 0.014425 seconds 
+  Import took 0.019395 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000138 seconds.
-  path: Assets/PolygonFantasyCharacters/Prefabs/Character_Male_Wizard_01.prefab
-  artifactKey: Guid(aea27ca7a35042c419065833e8daf224) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PolygonFantasyCharacters/Prefabs/Character_Male_Wizard_01.prefab using Guid(aea27ca7a35042c419065833e8daf224) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a6ef6b8e2ae4190a893437718c2e42e') in 0.015770 seconds 
-  Import took 0.019175 seconds .
+  Time since last request: 0.000730 seconds.
+  path: Assets/Polylised - Medieval Desert City/Prefabs/prefab_trees/dead_tree_c.prefab
+  artifactKey: Guid(ca09ab545ccbe4346af61d072bc2b67f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Polylised - Medieval Desert City/Prefabs/prefab_trees/dead_tree_c.prefab using Guid(ca09ab545ccbe4346af61d072bc2b67f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ced6ca9068856f678e02d30de85a8796') in 0.013325 seconds 
+  Import took 0.017297 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 407.345908 seconds.
-  path: Assets/PolygonFantasyCharacters/Models/Characters.fbx
-  artifactKey: Guid(e2958561779b1a748a4246b9d0c0b309) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PolygonFantasyCharacters/Models/Characters.fbx using Guid(e2958561779b1a748a4246b9d0c0b309) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf6cb16de40d121f4202025ed92675c3') in 0.196646 seconds 
-  Import took 0.200330 seconds .
+  Time since last request: 0.000548 seconds.
+  path: Assets/Polylised - Medieval Desert City/Prefabs/prefab_trees/dead_tree_f.prefab
+  artifactKey: Guid(de205966855be504a95152ab56d0896e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Polylised - Medieval Desert City/Prefabs/prefab_trees/dead_tree_f.prefab using Guid(de205966855be504a95152ab56d0896e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78103b309ad5734bfe99b6c6761a0c9a') in 0.012311 seconds 
+  Import took 0.015536 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000134 seconds.
-  path: Assets/PolygonFantasyCharacters/Models/FixedScaleCharacters/Characters.fbx
-  artifactKey: Guid(c9a34c70f1c0d00409f41fcfbb2a6871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PolygonFantasyCharacters/Models/FixedScaleCharacters/Characters.fbx using Guid(c9a34c70f1c0d00409f41fcfbb2a6871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fd83f2ffa2553ad636f0f8d762ad1a0') in 0.135510 seconds 
-  Import took 0.138812 seconds .
+  Time since last request: 350.653015 seconds.
+  path: Assets/Polylised - Medieval Desert City/Models/Civilian_Buildings/Materials/Terrain 1.mat
+  artifactKey: Guid(754229dc66b057d40bcd2ebe48424571) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Polylised - Medieval Desert City/Models/Civilian_Buildings/Materials/Terrain 1.mat using Guid(754229dc66b057d40bcd2ebe48424571) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3913d3ce07fd9f17218aabacfb11e94') in 0.060198 seconds 
+  Import took 0.068406 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 8.821209 seconds.
-  path: Assets/PolygonFantasyCharacters/Models/SM_Prop_Broom_01.fbx
-  artifactKey: Guid(79fd667e8c9d7a04fa7355980b624e06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PolygonFantasyCharacters/Models/SM_Prop_Broom_01.fbx using Guid(79fd667e8c9d7a04fa7355980b624e06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de23f315a8bde9a059d3202634581981') in 0.013679 seconds 
-  Import took 0.016647 seconds .
+  Time since last request: 9.863134 seconds.
+  path: Assets/Attempt.mat
+  artifactKey: Guid(554a13b3c7cac2347a0734c59ec16eef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Attempt.mat using Guid(554a13b3c7cac2347a0734c59ec16eef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12a53bec86a06fd769ccf6f967c8244e') in 0.020858 seconds 
+  Import took 0.025955 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000125 seconds.
-  path: Assets/PolygonFantasyCharacters/Models/SM_Prop_Bucket_01.fbx
-  artifactKey: Guid(764e24557bd191745b80a205fa179696) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PolygonFantasyCharacters/Models/SM_Prop_Bucket_01.fbx using Guid(764e24557bd191745b80a205fa179696) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b800b29c2e714c7d7d334623e9291de') in 0.014892 seconds 
-  Import took 0.017362 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000116 seconds.
-  path: Assets/PolygonFantasyCharacters/Models/SM_Prop_SpellBook_02.fbx
-  artifactKey: Guid(da3e53f1a6878fc4c8003d69bbe73a94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PolygonFantasyCharacters/Models/SM_Prop_SpellBook_02.fbx using Guid(da3e53f1a6878fc4c8003d69bbe73a94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c26f466fe4e575bafc0b9e5d72fb41b2') in 0.022956 seconds 
-  Import took 0.025881 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000154 seconds.
-  path: Assets/PolygonFantasyCharacters/Models/SM_Prop_SpellBook_Chained_01.fbx
-  artifactKey: Guid(1a6272358d1cd5f49aefa8bd6f72d37f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PolygonFantasyCharacters/Models/SM_Prop_SpellBook_Chained_01.fbx using Guid(1a6272358d1cd5f49aefa8bd6f72d37f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8526d07ac741dcd84820e30cc760311') in 0.013373 seconds 
-  Import took 0.016363 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000143 seconds.
-  path: Assets/PolygonFantasyCharacters/Models/SM_Prop_Dagger_01.fbx
-  artifactKey: Guid(5aa8a80e19f042f459d08a544bf91f2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PolygonFantasyCharacters/Models/SM_Prop_Dagger_01.fbx using Guid(5aa8a80e19f042f459d08a544bf91f2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '561cee56656c9bbc30a91e631dc18fec') in 0.011952 seconds 
-  Import took 0.014524 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000140 seconds.
-  path: Assets/PolygonFantasyCharacters/Models/SM_Prop_Jug_01.fbx
-  artifactKey: Guid(dc02350c0fddc494bb35c915247271d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PolygonFantasyCharacters/Models/SM_Prop_Jug_01.fbx using Guid(dc02350c0fddc494bb35c915247271d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcd3f1994a14d32ee485f423f8425bf7') in 0.012311 seconds 
-  Import took 0.015003 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000139 seconds.
-  path: Assets/PolygonFantasyCharacters/Models/SM_Prop_SwordOrnate_01.fbx
-  artifactKey: Guid(44afea8a4d34e684b83121f2a8a93ff7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PolygonFantasyCharacters/Models/SM_Prop_SwordOrnate_01.fbx using Guid(44afea8a4d34e684b83121f2a8a93ff7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c142f17b73f31e67328a77ebda154e1f') in 0.013095 seconds 
-  Import took 0.015802 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000151 seconds.
-  path: Assets/PolygonFantasyCharacters/Models/SM_Prop_Lute_01.fbx
-  artifactKey: Guid(634648a699805dd41a35cf7d6ba8fd10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PolygonFantasyCharacters/Models/SM_Prop_Lute_01.fbx using Guid(634648a699805dd41a35cf7d6ba8fd10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f27ad755103d624b177af2cd58e2aad') in 0.012700 seconds 
-  Import took 0.015779 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000130 seconds.
-  path: Assets/PolygonFantasyCharacters/Models/SM_Prop_Crystal_Ball_01.fbx
-  artifactKey: Guid(46bd55381b06ace4ebceda307f6e2890) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PolygonFantasyCharacters/Models/SM_Prop_Crystal_Ball_01.fbx using Guid(46bd55381b06ace4ebceda307f6e2890) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd00bc74a6536dde361eb89ab8ee338d9') in 0.012413 seconds 
-  Import took 0.014934 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000127 seconds.
-  path: Assets/PolygonFantasyCharacters/Models/SM_Prop_Sceptre_01.fbx
-  artifactKey: Guid(647897e1405db3543a8dd7f8bd99e413) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PolygonFantasyCharacters/Models/SM_Prop_Sceptre_01.fbx using Guid(647897e1405db3543a8dd7f8bd99e413) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5325874ece837d469232ef80c2df9d8') in 0.013012 seconds 
-  Import took 0.015807 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000120 seconds.
-  path: Assets/PolygonFantasyCharacters/Models/SM_Prop_Druid_Staff_01.fbx
-  artifactKey: Guid(4942d0fc79fa11e468aa02e086578e1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PolygonFantasyCharacters/Models/SM_Prop_Druid_Staff_01.fbx using Guid(4942d0fc79fa11e468aa02e086578e1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94ab774437394feb820303d3640683c0') in 0.012508 seconds 
-  Import took 0.015358 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000137 seconds.
-  path: Assets/PolygonFantasyCharacters/Models/SM_Prop_SpellBook_01.fbx
-  artifactKey: Guid(8fc8b0884cf369c468b88838ff277ce1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PolygonFantasyCharacters/Models/SM_Prop_SpellBook_01.fbx using Guid(8fc8b0884cf369c468b88838ff277ce1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79f931c2deb9a6d9f8eb8da49103c74c') in 0.012490 seconds 
-  Import took 0.015180 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.455421 seconds.
-  path: Assets/PolygonFantasyCharacters/Models/SM_Prop_Vials_01.fbx
-  artifactKey: Guid(7923bfd5132174547b080788dbaa6cb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PolygonFantasyCharacters/Models/SM_Prop_Vials_01.fbx using Guid(7923bfd5132174547b080788dbaa6cb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4d6a578919bbaaa01a2d73c581fc9b9') in 0.013262 seconds 
-  Import took 0.016054 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000132 seconds.
-  path: Assets/PolygonFantasyCharacters/Models/SM_Prop_Wand_01.fbx
-  artifactKey: Guid(a9ced8f230f963949a38996f29b56894) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PolygonFantasyCharacters/Models/SM_Prop_Wand_01.fbx using Guid(a9ced8f230f963949a38996f29b56894) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2827b089317c85eb5840d8908d97ea00') in 0.016426 seconds 
-  Import took 0.019106 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000140 seconds.
-  path: Assets/PolygonFantasyCharacters/Models/SM_Prop_WizardStaff_01.fbx
-  artifactKey: Guid(d768de269bcfa08439bd48a880468783) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PolygonFantasyCharacters/Models/SM_Prop_WizardStaff_01.fbx using Guid(d768de269bcfa08439bd48a880468783) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8666db5b3019fab47b34381004af6946') in 0.013220 seconds 
-  Import took 0.015829 seconds .
+  Time since last request: 40.939960 seconds.
+  path: Assets/Attempt.mat
+  artifactKey: Guid(554a13b3c7cac2347a0734c59ec16eef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Attempt.mat using Guid(554a13b3c7cac2347a0734c59ec16eef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6644ce37acbf23352e2d5e0592d275d0') in 0.019988 seconds 
+  Import took 0.024425 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002524 seconds.
+Registered in 0.002078 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.57 ms, found 2 plugins.
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.54 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.832 seconds
+- Completed reload, in  0.993 seconds
 Domain Reload Profiling:
-	ReloadAssembly (832ms)
-		BeginReloadAssembly (107ms)
+	ReloadAssembly (994ms)
+		BeginReloadAssembly (114ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (33ms)
-		EndReloadAssembly (676ms)
-			LoadAssemblies (66ms)
+			CreateAndSetChildDomain (42ms)
+		EndReloadAssembly (825ms)
+			LoadAssemblies (72ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (227ms)
+			SetupTypeCache (282ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (31ms)
-			SetupLoadedEditorAssemblies (271ms)
+			RebuildScriptCaches (43ms)
+			SetupLoadedEditorAssemblies (328ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (58ms)
-				ProcessInitializeOnLoadAttributes (195ms)
-				ProcessInitializeOnLoadMethodAttributes (9ms)
-				AfterProcessingInitializeOnLoad (4ms)
+				BeforeProcessingInitializeOnLoad (63ms)
+				ProcessInitializeOnLoadAttributes (250ms)
+				ProcessInitializeOnLoadMethodAttributes (8ms)
+				AfterProcessingInitializeOnLoad (3ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.64 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.71 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1940 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 104.3 MB.
-System memory in use after: 104.4 MB.
+System memory in use before: 89.9 MB.
+System memory in use after: 90.0 MB.
 
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2401.
-Total: 3.026600 ms (FindLiveObjects: 0.198700 ms CreateObjectMapping: 0.042500 ms MarkObjects: 2.759900 ms  DeleteObjects: 0.024600 ms)
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2430.
+Total: 4.039200 ms (FindLiveObjects: 0.263600 ms CreateObjectMapping: 0.059200 ms MarkObjects: 3.684300 ms  DeleteObjects: 0.030600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
