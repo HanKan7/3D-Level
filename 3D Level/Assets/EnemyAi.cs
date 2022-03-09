@@ -1,21 +1,25 @@
-
 using UnityEngine;
+using System.Collections.Generic;
 using UnityEngine.AI;
 
 public class EnemyAi : MonoBehaviour
 {
     public NavMeshAgent agent;
+    Animator anim;
 
     public Transform player;
 
     public LayerMask whatIsGround, whatIsPlayer;
 
     public float health;
+    public int i = 0;
 
     //Patroling
     public Vector3 walkPoint;
     public bool walkPointSet;
     public float walkPointRange;
+    public float wayPointIndex = 0;
+    public List<Transform> enemyWayPoints;
 
     //Attacking
     public float timeBetweenAttacks;
@@ -30,6 +34,7 @@ public class EnemyAi : MonoBehaviour
     {
         //player = GameObject.Find("PlayerObj").transform;
         agent = GetComponent<NavMeshAgent>();
+        anim = GetComponent<Animator>();
     }
 
     private void Update()
@@ -45,16 +50,29 @@ public class EnemyAi : MonoBehaviour
 
     private void Patroling()
     {
-        if (!walkPointSet) SearchWalkPoint();
+        //if (!walkPointSet) SearchWalkPoint();
 
-        if (walkPointSet)
-            agent.SetDestination(walkPoint);
+        //if (walkPointSet)
+        //    agent.SetDestination(walkPoint);
 
-        Vector3 distanceToWalkPoint = transform.position - walkPoint;
+        //Vector3 distanceToWalkPoint = transform.position - walkPoint;
 
-        //Walkpoint reached
-        if (distanceToWalkPoint.magnitude < 1f)
-            walkPointSet = false;
+        ////Walkpoint reached
+        //if (distanceToWalkPoint.magnitude < 1f)
+        //    walkPointSet = false;
+        anim.SetBool("Run", false);
+        agent.speed = 3f;
+        if (Vector3.Distance(enemyWayPoints[i].transform.position, agent.transform.position) > 1f)
+        {
+            agent.SetDestination(enemyWayPoints[i].transform.position);
+        }
+        
+        else
+        {
+            i = (i + 1) % (enemyWayPoints.Count);   
+        }
+
+
     }
     private void SearchWalkPoint()
     {
@@ -70,6 +88,8 @@ public class EnemyAi : MonoBehaviour
 
     private void ChasePlayer()
     {
+        anim.SetBool("Run", true);
+        agent.speed = 11f;
         agent.SetDestination(player.position);
     }
 
