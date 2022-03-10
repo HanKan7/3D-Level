@@ -51,7 +51,8 @@ public class EnemyAi : MonoBehaviour
                 ChasePlayer();
                 if (Vector3.Distance(transform.position, player.transform.position) < 2f)
                 {
-                    player.GetComponent<PlayerManager>().ResetPosition();
+                    //player.GetComponent<PlayerManager>().ResetPosition();
+                    player.GetComponent<PlayerManager>().Busted();
                 }
             }
 
@@ -107,6 +108,8 @@ public class EnemyAi : MonoBehaviour
         agent.speed = 11f;
         agent.SetDestination(player.position);
     }
+
+
 
     private void AttackPlayer()
     {
