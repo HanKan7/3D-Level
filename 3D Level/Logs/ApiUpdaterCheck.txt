@@ -8,3 +8,13 @@ C# parse time         : 479ms
 candidates check time : 35ms
 console write time    : 0ms
 
+[api-updater (non-obsolete-error-filter)] 3/9/2022 10:26:40 PM : Starting C:/Hanu/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 655.3849ms
+moved types parse time: 38ms
+candidates parse time : 0ms
+C# parse time         : 437ms
+candidates check time : 22ms
+console write time    : 0ms
+

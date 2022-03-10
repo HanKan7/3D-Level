@@ -18,7 +18,8 @@ public class NPC : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         anim = GetComponent<Animator>();
         random = Random.Range(1, 8);
-        randomIsSet = true; 
+        randomIsSet = true;
+        agent.radius = 0.2f;
     }
 
     // Update is called once per frame
