@@ -17,7 +17,7 @@ public class NPC : MonoBehaviour
     {
         agent = GetComponent<NavMeshAgent>();
         anim = GetComponent<Animator>();
-        random = Random.Range(1, 8);
+        random = Random.Range(1, 14);
         randomIsSet = true;
         agent.radius = 0.2f;
     }
@@ -25,7 +25,6 @@ public class NPC : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
         RoamingAround();
     }
 
@@ -80,19 +79,61 @@ public class NPC : MonoBehaviour
             positionIsSet = true;
 
         }
-        else if(random == 8 && !positionIsSet)
+        else if (random == 8 && !positionIsSet)
         {
-            i = (i + 1) % (wayPoints.Count);
-            Destination = wayPoints[i].transform.position;
-            if (Vector3.Distance(Destination, agent.transform.position) > 1f)
-            {
-                agent.SetDestination(Destination);
-            }
+            Destination = new Vector3(Random.Range(436, 439), 6, Random.Range(648, 682));
+            agent.SetDestination(Destination);
             positionIsSet = true;
+
         }
+        else if (random == 9 && !positionIsSet)
+        {
+            Destination = new Vector3(Random.Range(472, 474), 6, Random.Range(660, 690));
+            agent.SetDestination(Destination);
+            positionIsSet = true;
+
+        }
+        else if (random == 10 && !positionIsSet)
+        {
+            Destination = new Vector3(Random.Range(451, 474), 6, Random.Range(652, 657));
+            agent.SetDestination(Destination);
+            positionIsSet = true;
+
+        }
+        else if (random == 11 && !positionIsSet)
+        {
+            Destination = new Vector3(Random.Range(443, 481), 6, Random.Range(634, 639));
+            agent.SetDestination(Destination);
+            positionIsSet = true;
+
+        }
+        else if (random == 12 && !positionIsSet)
+        {
+            Destination = new Vector3(Random.Range(445, 454), 6, Random.Range(606, 626));
+            agent.SetDestination(Destination);
+            positionIsSet = true;
+
+        }
+        else if (random == 13 && !positionIsSet)
+        {
+            Destination = new Vector3(Random.Range(457, 468), 6, Random.Range(600, 623));
+            agent.SetDestination(Destination);
+            positionIsSet = true;
+
+        }
+        //else if(random == 8 && !positionIsSet)
+        //{
+        //    i = (i + 1) % (wayPoints.Count);
+        //    Destination = wayPoints[i].transform.position;
+        //    if (Vector3.Distance(Destination, agent.transform.position) > 1f)
+        //    {
+        //        agent.SetDestination(Destination);
+        //    }
+        //    positionIsSet = true;
+        //}
         if (Vector3.Distance(Destination, agent.transform.position) <= 3f)
         {
-            random = Random.Range(1, 8);
+            random = Random.Range(1, 14);
             positionIsSet = false;
         }
         //Destination = wayPoints[i].transform.position;
