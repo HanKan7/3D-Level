@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 public class PlayerManager : MonoBehaviour
@@ -32,6 +33,17 @@ public class PlayerManager : MonoBehaviour
             sceneTransitions.churchAnim.SetTrigger("trigger");
             StartCoroutine("ChasePlayerAfterSomeTime");
         }
+        if (playerCollectedTheItem)
+        {
+            if (other.gameObject.tag == "Goal")
+            {
+                Debug.Log("Reached Goal");
+                sceneTransitions.bustedAnim.GetComponentInChildren<TMPro.TMP_Text>().text = "YOU WIN!";
+                sceneTransitions.bustedAnim.SetTrigger("busted");
+                sceneTransitions.StartCoroutine(sceneTransitions.BustedAnimationEvent());
+            }
+        }
+        
     }
 
     private void OnControllerColliderHit(ControllerColliderHit hit)
@@ -53,6 +65,7 @@ public class PlayerManager : MonoBehaviour
 
     public void Busted()
     {
+        sceneTransitions.bustedAnim.GetComponentInChildren<TMPro.TMP_Text>().text = "BUSTED!";
         sceneTransitions.bustedAnim.SetTrigger("busted");
         StartCoroutine(sceneTransitions.BustedAnimationEvent());
     }
@@ -66,7 +79,7 @@ public class PlayerManager : MonoBehaviour
 
     IEnumerator ChasePlayerAfterSomeTime()
     {
-        yield return new WaitForSeconds(3.0f);
+        yield return new WaitForSeconds(4.0f);
         playerCollectedTheItem = true;
     }
 

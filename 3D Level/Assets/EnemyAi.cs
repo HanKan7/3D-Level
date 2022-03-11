@@ -4,12 +4,15 @@ using UnityEngine.AI;
 
 public class EnemyAi : MonoBehaviour
 {
+    bool isTriggerEnemy = false;
     public NavMeshAgent agent;
     Animator anim;
 
     public Transform player;
 
     public LayerMask whatIsGround, whatIsPlayer;
+    public List<Transform> rayTransforms = new List<Transform>();
+    public List<Ray> rays = new List<Ray>();
 
     public float health;
     public int i = 0;
@@ -37,31 +40,44 @@ public class EnemyAi : MonoBehaviour
         anim = GetComponent<Animator>();
     }
 
+    private void Start()
+    {
+        for(int i = 0; i < rayTransforms.Count; i++)
+        {
+            Ray ray = new Ray(transform.position + new Vector3(0, 1f, 0), rayTransforms[i].transform.position - transform.position);
+            rays.Add(ray);
+        }
+    }
+
     private void Update()
     {
-        if (!player.GetComponent<PlayerManager>().playerCollectedTheItem)
+        if (!isTriggerEnemy)
         {
-            //Check for sight and attack range
-            playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
-            playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
+            if (!player.GetComponent<PlayerManager>().playerCollectedTheItem)
+            {
+                //Check for sight and attack range
+                playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
+                playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
 
-            if (!playerInSightRange && !playerInAttackRange) Patroling();
-            if (playerInSightRange && !playerInAttackRange)
+                if (!playerInSightRange && !playerInAttackRange) Patroling();
+                if (playerInSightRange && !playerInAttackRange)
+                {
+                    ChasePlayer();
+                    if (Vector3.Distance(transform.position, player.transform.position) < 2f)
+                    {
+                        //player.GetComponent<PlayerManager>().ResetPosition();
+                        player.GetComponent<PlayerManager>().Busted();
+                    }
+                }
+
+                if (playerInAttackRange && playerInSightRange) AttackPlayer();
+            }
+            else
             {
                 ChasePlayer();
-                if (Vector3.Distance(transform.position, player.transform.position) < 2f)
-                {
-                    //player.GetComponent<PlayerManager>().ResetPosition();
-                    player.GetComponent<PlayerManager>().Busted();
-                }
             }
-
-            if (playerInAttackRange && playerInSightRange) AttackPlayer();
         }
-        else
-        {
-            ChasePlayer();
-        }
+        
     }
 
     private void Patroling()
@@ -152,5 +168,12 @@ public class EnemyAi : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position, attackRange);
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, sightRange);
+        Gizmos.color = Color.blue;
+        for(int i = 0; i < rayTransforms.Count; i++)
+        {
+            Gizmos.DrawLine(transform.position + new Vector3(0, 1f, 0), rayTransforms[i].transform.position);
+            //Gizmos.DrawRay(rays[i]);
+        }
+        
     }
 }
