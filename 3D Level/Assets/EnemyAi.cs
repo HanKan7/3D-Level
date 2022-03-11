@@ -121,7 +121,7 @@ public class EnemyAi : MonoBehaviour
     private void ChasePlayer()
     {
         anim.SetBool("Run", true);
-        agent.speed = 11f;
+        agent.speed = 12f;
         agent.SetDestination(player.position);
     }
 
