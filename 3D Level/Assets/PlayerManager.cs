@@ -10,10 +10,12 @@ public class PlayerManager : MonoBehaviour
     public Transform resetTransform;
     StarterAssets.ThirdPersonController thirdPersonController;
     SceneTransitions sceneTransitions;
+    Audio audio;
     
     private void Start()
     {
         sceneTransitions = FindObjectOfType<SceneTransitions>();
+        audio = FindObjectOfType<Audio>();
     }
     private void Update()
     {
@@ -24,12 +26,16 @@ public class PlayerManager : MonoBehaviour
     {
         if (other.gameObject.tag == "Sea")
         {
-            Debug.Log("Fallen into the sea");
+            audio.waterFall.Play();
             ResetPosition();
         }
         if (other.gameObject.tag == "Church")
         {
-            Debug.Log("Collected Item");
+            other.gameObject.SetActive(false);
+            //Debug.Log("Collected Item");
+            audio.gotItem.Play();
+            audio.cityBell.Stop();
+            audio.alarm.Play();
             sceneTransitions.churchAnim.SetTrigger("trigger");
             StartCoroutine("ChasePlayerAfterSomeTime");
         }
@@ -37,7 +43,8 @@ public class PlayerManager : MonoBehaviour
         {
             if (other.gameObject.tag == "Goal")
             {
-                Debug.Log("Reached Goal");
+                //Debug.Log("Reached Goal");
+                audio.winSound.Play();
                 sceneTransitions.bustedAnim.GetComponentInChildren<TMPro.TMP_Text>().text = "YOU WIN!";
                 sceneTransitions.bustedAnim.SetTrigger("busted");
                 sceneTransitions.StartCoroutine(sceneTransitions.BustedAnimationEvent());
@@ -50,7 +57,8 @@ public class PlayerManager : MonoBehaviour
     {
         if (hit.gameObject.tag == "Enemy")
         {
-            Debug.Log("Collided with enemy");
+            //Debug.Log("Collided with enemy");
+            audio.bustedSound.Play();
             Busted();
         }
     }

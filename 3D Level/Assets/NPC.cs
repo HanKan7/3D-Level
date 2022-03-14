@@ -121,31 +121,34 @@ public class NPC : MonoBehaviour
             positionIsSet = true;
 
         }
-        //else if(random == 8 && !positionIsSet)
-        //{
-        //    i = (i + 1) % (wayPoints.Count);
-        //    Destination = wayPoints[i].transform.position;
-        //    if (Vector3.Distance(Destination, agent.transform.position) > 1f)
-        //    {
-        //        agent.SetDestination(Destination);
-        //    }
-        //    positionIsSet = true;
-        //}
+
         if (Vector3.Distance(Destination, agent.transform.position) <= 3f)
         {
             random = Random.Range(1, 14);
             positionIsSet = false;
         }
-        //Destination = wayPoints[i].transform.position;
-        //if (Vector3.Distance(Destination, agent.transform.position) > 1f)
-        //{
+        /*
+        else if(random == 8 && !positionIsSet)
+        {
+           i = (i + 1) % (wayPoints.Count);
+            Destination = wayPoints[i].transform.position;
+           if (Vector3.Distance(Destination, agent.transform.position) > 1f)
+            {
+                agent.SetDestination(Destination);
+            }
+            positionIsSet = true;
+        }
+        Destination = wayPoints[i].transform.position;
+        if (Vector3.Distance(Destination, agent.transform.position) > 1f)
+        {
 
-        //    agent.SetDestination(Destination);
-        //}
+            agent.SetDestination(Destination);
+        }
 
-        //else
-        //{
-        //    i = (i + 1) % (wayPoints.Count);
-        //}
+        else
+        {
+            i = (i + 1) % (wayPoints.Count);
+        }
+        */
     }
 }
